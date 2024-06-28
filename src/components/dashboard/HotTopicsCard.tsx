@@ -7,11 +7,19 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import CustomWordCloud from "../CustomWordCloud";
+import { prisma } from "@/lib/db";
 
 
 type Props = {};
 
 const HotTopicsCard = async (props: Props) => {
+  const topics= await prisma.topic_count.findMany({})
+  const formattedTopics=topics.map(topic => {
+    return {
+      text: topic.topic,
+      value: topic.count
+    }
+  })
 
   return (
     <Card className="col-span-4 hover:cursor-pointer hover:opacity-75 border border-orange bg-orange-100 dark:bg-orange-900 transition-all duration-200">
@@ -22,7 +30,7 @@ const HotTopicsCard = async (props: Props) => {
         </CardDescription>
       </CardHeader>
       <CardContent className="pl-2">
-        <CustomWordCloud/>
+        <CustomWordCloud formattedTopics={formattedTopics}/>
       </CardContent>
     </Card>
   );
