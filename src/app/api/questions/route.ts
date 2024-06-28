@@ -47,6 +47,7 @@ export async function POST(req: Request, res: Response) {
         }
       );
     }
+    // console.log(questions)
     // console.table([topic,questions])
     return NextResponse.json(
       {

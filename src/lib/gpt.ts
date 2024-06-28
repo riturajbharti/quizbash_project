@@ -13,7 +13,7 @@ export async function strict_output(
   output_format: OutputFormat,
   default_category: string = "",
   output_value_only: boolean = false,
-  num_tries: number = 2,
+  num_tries: number = 4,
   verbose: boolean = false,
 ) {
   // if the user input is in a list, we also process the output as a list of json
