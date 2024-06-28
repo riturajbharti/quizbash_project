@@ -41,12 +41,13 @@ export async function POST(req: Request, res: Response) {
         {
           question: "question",
           answer: "answer with max length of 15 words",
-          option1:"1st option other than answer with max length of 15 words",
-          option2:"2nd option other than answer with max length of 15 words",
-          option3:"3rd option other than answer with max length of 15 words",
+          option1:"1st option with max length of 15 words other than answer",
+          option2:"2nd option with max length of 15 words other than answer",
+          option3:"3rd option with max length of 15 words other than answer",
         }
       );
     }
+    // console.table([topic,questions])
     return NextResponse.json(
       {
         questions: questions,

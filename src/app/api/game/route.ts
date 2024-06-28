@@ -49,7 +49,9 @@ export async function POST(req: Request, res: Response) {
         type,
       }
     );
-    // console.log(data.questions)
+    // console.log("hi");
+    
+    console.log(data.questions)
     if (type === "mcq") {
       type mcqQuestion = {
         question: string;
@@ -58,7 +60,7 @@ export async function POST(req: Request, res: Response) {
         option2: string;
         option3: string;
       };
-
+      // console.log(data.questions)
       const manyData = data.questions.map((question: mcqQuestion) => {
         // mix up the options lol
         const options = [
