@@ -45,7 +45,7 @@ export async function strict_output(
       output_format_prompt += `\nGenerate an array of json, one json for each input element.`;
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro"});
+    const model = genAI.getGenerativeModel({ model: "gemini-1.0-pro"});
 
     const system_role: TextPart = {
         text: system_prompt + output_format_prompt + error_msg
@@ -86,6 +86,7 @@ export async function strict_output(
     // try-catch block to ensure output format is adhered to
     try {
       let output: any = JSON.parse(res);
+      // console.log(output)
  
       if (list_input) {
         if (!Array.isArray(output)) {
@@ -94,7 +95,6 @@ export async function strict_output(
       } else {
         output = [output];
       }
- 
       // check for each element in the output_list, the format is correctly adhered to
       for (let index = 0; index < output.length; index++) {
         for (const key in output_format) {
