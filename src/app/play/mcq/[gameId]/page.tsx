@@ -42,11 +42,11 @@ const MCQPage = async ({ params: { gameId } }: Props) => {
   <div className="group hover:bg-orange-100 dark:hover:bg-orange-900 transition-all duration-200 rounded-lg overflow-hidden max-w-md w-full">
     <Card className="hover:cursor-pointer border border-orange bg-orange-100 dark:bg-orange-900 transition-all duration-200">
       <CardHeader className="bg-orange-500 dark:bg-orange-800 text-white py-4 px-6">
-        <CardTitle>Welcome to QuizBash 💫!</CardTitle>
+        <CardTitle>Thank you for using QuizBash 💫!</CardTitle>
       </CardHeader>
       <CardContent className="px-6 py-4">
         <CardDescription>
-          Oops the Questions couldn't be generated because of too much traffic,
+          Oops the Questions couldn&apost be generated because of too much traffic,
           Please try after sometime or with less number of questions!!
           Thank You!!
         </CardDescription>
