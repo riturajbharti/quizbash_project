@@ -7,7 +7,7 @@ import { signOut } from 'next-auth/react'
 import { Button } from './ui/button'
 import { LogOut } from 'lucide-react'
 import ProfilePic from './ProfilePic'
-
+export const runtime = 'edge';
 type Props = {
     user:Pick <User,"name"|"image"|"email">
 }

@@ -15,7 +15,7 @@ import axios from 'axios'
 import { get } from 'http'
 import { useRouter } from 'next/navigation'
 import LoadingQuestions from './LoadingQuestions'
-
+export const runtime = 'edge';
 type Props = {
   topicParam:string
 }

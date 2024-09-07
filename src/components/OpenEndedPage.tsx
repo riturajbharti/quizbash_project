@@ -14,7 +14,7 @@ import { checkAnswerSchema,endGameSchema } from "@/schemas/forms/quiz";
 import axios from "axios";
 import BlankAnswerInput from "./BlankAnswerInput";
 import Link from "next/link";
-
+export const runtime = 'edge';
 type Props = {
   game: Game & { questions: Pick<Question, "id" | "question" | "answer">[] };
 };

@@ -6,6 +6,7 @@ import React from "react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { LucideLayoutDashboard } from "lucide-react";
+export const runtime = 'edge';
 
 type Props = {};
 

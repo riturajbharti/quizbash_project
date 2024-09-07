@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { getAuthSession } from "@/lib/nextauth";
 import { redirect } from "next/navigation";
 
+export const runtime = 'edge';
+
 export default async function Home() {
   const session=await getAuthSession()
   if(session?.user){

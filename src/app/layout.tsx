@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Providers from "@/components/Providers";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/toaster";
+export const runtime = 'edge';
 
 const inter = Inter({ subsets: ["latin"] });
 

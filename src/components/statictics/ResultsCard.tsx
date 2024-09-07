@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
 import { Award, Trophy } from 'lucide-react'
+export const runtime = 'edge';
 
 type Props = {
     accuracy:number

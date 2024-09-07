@@ -14,6 +14,7 @@ import { Question } from "@prisma/client";
 type Props = {
   questions: Question[];
 };
+export const runtime = 'edge';
 
 const QuestionsList = ({ questions }: Props) => {
   return (

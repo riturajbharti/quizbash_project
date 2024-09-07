@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { Separator } from "@radix-ui/react-separator";
+export const runtime = 'edge';
 
 type Props = {
   correct_answers: number;

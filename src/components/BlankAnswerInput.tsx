@@ -1,6 +1,7 @@
 import React from "react";
 import keyword_extractor from "keyword-extractor";
 import { Input } from "postcss";
+export const runtime = 'edge';
 
 type Props = {
   answer: string;

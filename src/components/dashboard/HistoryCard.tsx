@@ -3,6 +3,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useRouter } from "next/navigation";
 import { History } from "lucide-react";
+export const runtime = 'edge';
 
 type Props = {};
 

@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import CustomWordCloud from "../CustomWordCloud";
 import { prisma } from "@/lib/db";
-
+export const runtime = 'edge';
 
 type Props = {};
 
