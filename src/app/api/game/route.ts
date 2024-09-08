@@ -4,7 +4,7 @@ import { quizCreationSchema } from "@/schemas/forms/quiz";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import axios from "axios";
-export const maxDuration=60;
+
 export async function POST(req: Request, res: Response) {
   try {
     const session = await getAuthSession();
