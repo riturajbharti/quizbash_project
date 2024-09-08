@@ -19,7 +19,7 @@ export default async function Home() {
       </CardHeader>
       <CardContent className="px-6 py-4">
         <CardDescription>
-          The curious fox ventured into the meadow, where vibrant wildflowers danced in the gentle breeze. Nearby, a babbling brook sparkled under the warm sun. Butterflies fluttered lazily, and birds sang melodious tunes.
+          Welcome To QuizBash !!!
         </CardDescription>
         <div className="mt-4">
           <SignInButton text="Sign In with Google" />
