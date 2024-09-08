@@ -2,7 +2,6 @@ import React from "react";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target } from "lucide-react";
-export const runtime = 'edge';
 type Props = { accuracy: number };
 
 const AccuracyCard = ({ accuracy }: Props) => {

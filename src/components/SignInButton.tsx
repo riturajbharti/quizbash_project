@@ -2,7 +2,6 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { signIn } from "next-auth/react";
-export const runtime = 'edge';
 
 type Props = { text: string };
 

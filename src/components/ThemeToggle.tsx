@@ -11,7 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-export const runtime = 'edge';
+
 export function ThemeToggle() {
   const { setTheme } = useTheme()
 

@@ -14,7 +14,6 @@ import { useToast } from './ui/use-toast'
 import Link from 'next/link'
 import { cn, formatTimeDelta } from '@/lib/utils'
 import { now } from 'next-auth/client/_utils'
-export const runtime = 'edge';
 
 type Props = {
     game:Game & {questions : Pick<Question,'id' | 'options' | 'question'>[]}

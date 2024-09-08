@@ -2,7 +2,6 @@
 import { Progress } from './ui/progress';
 import Image from 'next/image'
 import React from 'react'
-export const runtime = 'edge';
 
 type Props = { finished: boolean };
 

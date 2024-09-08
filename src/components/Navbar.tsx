@@ -4,7 +4,6 @@ import SignInButton from "./SignInButton";
 import Link from "next/link";
 import UserAccountNav from "./UserAccountNav";
 import { ThemeToggle } from "./ThemeToggle";
-export const runtime = 'edge';
 
 type Props = {};
 

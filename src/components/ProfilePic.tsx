@@ -3,7 +3,6 @@ import { User } from 'next-auth'
 import React from 'react'
 import { Avatar, AvatarFallback } from './ui/avatar'
 import Image from 'next/image'
-export const runtime = 'edge';
 
 type Props = {
     user:Pick<User,"name" | "image" >;

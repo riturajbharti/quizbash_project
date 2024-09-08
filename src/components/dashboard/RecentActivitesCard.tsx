@@ -11,7 +11,6 @@ import { getAuthSession } from "@/lib/nextauth";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import HistoryComponent from "../HistoryComponent";
-export const runtime = 'edge';
 
 type Props = {};
 

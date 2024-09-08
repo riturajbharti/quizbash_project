@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Hourglass } from "lucide-react";
 import { formatTimeDelta } from "@/lib/utils";
 import { differenceInSeconds } from "date-fns";
-export const runtime = 'edge';
 
 type Props = {
   timeEnded: Date;

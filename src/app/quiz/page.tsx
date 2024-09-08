@@ -2,7 +2,6 @@ import QuizCreation from '@/components/QuizCreation'
 import { getAuthSession } from '@/lib/nextauth'
 import { redirect } from 'next/navigation'
 import React from 'react'
-export const runtime = 'edge';
 
 type Props = {
     searchParams:{

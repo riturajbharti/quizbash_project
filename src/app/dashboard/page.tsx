@@ -5,7 +5,7 @@ import RecentActivityCard from '@/components/dashboard/RecentActivitesCard'
 import { getAuthSession } from '@/lib/nextauth'
 import { redirect } from 'next/navigation'
 import React from 'react'
-export const runtime = 'edge';
+
 type Props = {}
 
 export const metadata ={

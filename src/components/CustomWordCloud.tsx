@@ -3,7 +3,6 @@ import { useTheme } from 'next-themes'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import D3WordCloud from 'react-d3-cloud'
-export const runtime = 'edge';
 
 type Props = {
   formattedTopics:{text:string;value:number} [];
