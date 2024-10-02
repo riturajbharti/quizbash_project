@@ -11,7 +11,7 @@ type Props = {
 
 const TimeTakenCard = ({ timeEnded, timeStarted }: Props) => {
   return (
-    <Card className="md:col-span-4 bg-orange-50">
+    <Card className="md:col-span-4 hover:cursor-pointer hover:opacity-75 border border-orange bg-orange-100 dark:bg-orange-900 transition-all duration-200">
       <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
         <CardTitle className="text-2xl font-bold">Time Taken</CardTitle>
         <Hourglass />

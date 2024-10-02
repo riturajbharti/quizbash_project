@@ -59,7 +59,7 @@ const StisticsPage = async ({params : {gameId}}: Props) => {
           <h2 className="text-3xl font-bold tracking-tight">Statistics</h2>
           <div className="flex items-center space-x-2">
             <Link href="/dashboard" className={buttonVariants({
-                variant:'special'
+                variant:'special_2'
             })}>
               <LucideLayoutDashboard className="mr-2" />
               Back to Dashboard
